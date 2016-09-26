@@ -1,7 +1,7 @@
 var maxRowLength = 0;
 var currentRowLength = 1;
 
-
+// 將JSON轉成CSV格式
 // objArray :傳入的JSON數據
 // rowLength:一列(Row)有幾個資料
 function ConvertToCSV(objArray, rowLength) {
