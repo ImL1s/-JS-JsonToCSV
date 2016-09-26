@@ -1,0 +1,28 @@
+CTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="../js/jquery-2.2.4.min.js"></script>
+	<script type="text/javascript" src="../js/jsonToCSV.js"></script>
+	<script type="text/javascript">
+		
+		var target = 
+		[{"name":"Tom","lastname":"Chen","report":[{"subject":"Math","score":80},{"subject":"English","score":90}]},
+		{"name":"Amy","lastname":"Lin","report":[{"subject":"Math","score":86},{"subject":"English","score":88}]},
+		{"name":"Amy","lastname":"Lin","report":[{"subject":"Math","score":86},{"subject":"English","score":88}]},
+		{"name":"Amy","lastname":"Lin","report":[{"subject":"Math","score":86},{"subject":"English","score":88}]}];
+
+		$(function(){
+
+			var str = ConvertToCSV(target,6);
+
+			alert(str);
+			document.write(str);
+		});
+	</script>
+</head>
+<body>
+
+</body>
+</html>
+
